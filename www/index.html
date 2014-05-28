@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi">
+        <link rel="stylesheet" type="text/css" href="css/vendor/jquery.mobile-1.4.2.min.css">
+        <title>PhoneGap Demo</title>
+    </head>
+    <body>
+        <!-- Network Connectivity page -->
+        <div data-role="page" id="mainPage">
+            <div data-role="header">
+                <h1>PhoneGap Demo</h1>
+                <div data-role="navbar" class="ui-state-persist">
+                    <ul>
+                        <li><a href="#mainPage" data-icon="grid" data-transition="none">Network</a></li>
+                        <li><a href="#devicePage" data-icon="gear" data-transition="slide">Device</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role="content" data-iscroll>
+                <h3>Network Connectivity</h3>
+                <div id="networkConnectivityTxt">Unable to detect network.</div>
+            </div>
+        </div>
+
+        <!-- Device Info page -->
+        <div data-role="page" id="devicePage">
+            <div data-role="header">
+                <a data-icon="back" data-rel="back">Back</a>
+                <h4>PhoneGap Demo</h4>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#mainPage" data-icon="grid" data-transition="slide">Network</a></li>
+                        <li><a href="#devicePage" data-icon="gear" data-transition="none">Device</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role="content" data-iscroll>
+                <h3>Device Info</h3>
+                <ul id="deviceInfo" data-role="listview" data-inset="true"></ul>
+            </div>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
+        <script type="text/javascript" src="js/vendor/jquery.mobile-1.4.2.min.js"></script>
+        <script type="text/javascript" src="network.js"></script>
+        <script type="text/javascript" src="device.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+    </body>
+</html>

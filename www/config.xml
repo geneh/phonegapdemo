@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.costco.pgbdemo"
+        versionCode="1" 
+        version   = "1.0.0">
+    <!-- versionCode is optional and Android only -->
+
+    <name>PhoneGap Demo</name>
+
+    <description>
+        PhoneGap Build Demo. 
+    </description>
+    
+    <gap:platform name="ios" />
+    <gap:platform name="android" />
+    
+    <preference name="phonegap-version" value="3.4.0" />
+    <preference name="orientation" value="portrait" />
+
+    <gap:plugin name="org.apache.cordova.device" />
+    <gap:plugin name="org.apache.cordova.network-information" />
+
+</widget>
