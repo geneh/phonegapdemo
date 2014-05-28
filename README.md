@@ -1,4 +1,4 @@
-PhoneGap Demo
+PGB Demo
 =============
 
-PhoneGap demo application.
+PhoneGap Build demo application.
