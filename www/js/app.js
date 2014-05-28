@@ -1,7 +1,6 @@
 //Main page
-$(document).on("pageshow", "#mainPage", function() {
-    checkConnection();
-});
+$(document).on("deviceready", checkConnection);
+$(document).on("pageshow", "#mainPage", checkConnection);
 
 function checkConnection() {
     if (typeof Connection !== "undefined") {
