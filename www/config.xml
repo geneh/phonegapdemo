@@ -6,7 +6,7 @@
         version   = "1.0.0">
     <!-- versionCode is optional and Android only -->
 
-    <name>PhoneGap Demo</name>
+    <name>PGB Demo</name>
 
     <description>
         PhoneGap Build Demo. 
